@@ -133,12 +133,12 @@ const Pricing: React.FC = () => {
                   ))}
                 </ul>
                 
-                <a 
+                {/* <a 
                   href="#join" 
                   className={`btn w-full ${plan.popular ? 'btn-primary' : 'btn-outline'}`}
                 >
                   Choose Plan
-                </a>
+                </a> */}
               </div>
             </div>
           ))}
