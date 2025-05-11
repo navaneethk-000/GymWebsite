@@ -158,12 +158,12 @@ const Pricing: React.FC = () => {
                 <p className="text-red-500 text-xl font-bold mb-4">
                   {addOn.price}<span className="text-sm text-gray-400">{addOn.period}</span>
                 </p>
-                <a 
+                {/* <a 
                   href="#join" 
                   className="btn btn-outline w-full"
                 >
                   Add Service
-                </a>
+                </a> */}
               </div>
             ))}
           </div>

@@ -132,8 +132,8 @@ const Footer: React.FC = () => {
             href="#home"
             className="flex items-center gap-2 text-2xl font-bold text-white mb-4 ml-28"
           >
-            <Dumbbell className="h-8 w-8 text-red-600" />
-            <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
+            <Dumbbell className="h-8 w-8 text-red-600 hidden sm:block" />
+            <span className="bg-gradient-to-r hidden sm:block from-red-600 to-blue-600 bg-clip-text text-transparent">
               Stay Fit
             </span>
           </a>
