@@ -64,12 +64,12 @@ const WorkoutTypes: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-2 text-white">{workout.title}</h3>
               <p className="text-gray-400">{workout.description}</p>
-              <a 
+              {/* <a 
                 href="#join" 
                 className="mt-4 inline-block text-red-500 hover:text-red-400 font-medium"
               >
                 Learn more →
-              </a>
+              </a> */}
             </div>
           ))}
         </div>

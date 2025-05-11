@@ -2,6 +2,15 @@ import React from 'react';
 import { Play, ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
+
+  //Whatsapp redirection
+  const phoneNumber = "7907425360"; // replace with the owner's number
+  const message = "Hi! I'm interested in joining Stay Fit Gym. Please share the details.";
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+
+
   return (
     <section 
       id="home" 
@@ -27,17 +36,17 @@ const Hero: React.FC = () => {
             Join the ultimate fitness experience where strength meets community. Start your fitness journey today with our world-class facilities and expert trainers.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#join" className="btn btn-primary text-lg">
+          <div className="flex sm:flex-row gap-4 justify-center">
+            <a onClick={() => window.open(whatsappURL, "_blank")} className="btn btn-primary text-lg">
               Join Now
             </a>
             <a href="#pricing" className="btn btn-outline text-lg">
               View Plans
             </a>
-            <a href="#video" className="btn btn-secondary text-lg flex items-center gap-2">
+            {/* <a href="#video" className="btn btn-secondary text-lg flex items-center gap-2">
               <Play size={20} />
               Watch Tour
-            </a>
+            </a>   */}
           </div>
         </div>
       </div>

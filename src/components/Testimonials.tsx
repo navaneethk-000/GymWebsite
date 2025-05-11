@@ -59,7 +59,7 @@ const Testimonials: React.FC = () => {
         <div className="section-title fade-in">
           <h2>What Our Members Say</h2>
           <p>
-            Hear from our community about how PowerFit has helped them transform their lives
+            Hear from our community about how StayFit has helped them transform their lives
             and achieve their fitness goals.
           </p>
         </div>

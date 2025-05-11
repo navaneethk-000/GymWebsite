@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
     {
       icon: <MapPin className="h-6 w-6 text-red-500" />,
       title: 'Our Location',
-      details: '123 Fitness Avenue, Powercity, India',
+      details: 'Edakkad, Opposite to petrol pumb,Kerala, India',
     },
     {
       icon: <Phone className="h-6 w-6 text-red-500" />,
@@ -41,12 +41,12 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="h-6 w-6 text-red-500" />,
       title: 'Email Address',
-      details: 'info@powerfit.com',
+      details: 'info@stayfit.com',
     },
     {
       icon: <Clock className="h-6 w-6 text-red-500" />,
       title: 'Working Hours',
-      details: 'Mon-Sat: 5:00 AM - 11:00 PM\nSundays: 7:00 AM - 8:00 PM',
+      details: 'Mon-Sat: 5:00 AM - 10:00 PM\nSundays: 7:00 AM - 8:00 PM',
     },
   ];
 

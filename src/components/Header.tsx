@@ -23,6 +23,12 @@ const Header: React.FC = () => {
     { name: 'Gallery', href: '#gallery' },
     { name: 'Contact', href: '#contact' },
   ];
+
+  //Whatsapp redirection
+  const phoneNumber = "7907425360"; // replace with the owner's number
+  const message = "Hi! I'm interested in joining Stay Fit Gym. Please share the details.";
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-900/95 shadow-lg backdrop-blur-sm py-2' : 'bg-transparent py-4'}`}>
@@ -30,7 +36,7 @@ const Header: React.FC = () => {
         <a href="#home" className="flex items-center gap-2 text-2xl font-bold text-white">
           <Dumbbell className="h-8 w-8 text-red-600" />
           <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
-            PowerFit
+            StayFit
           </span>
         </a>
         
@@ -44,7 +50,7 @@ const Header: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <a href="#join" className="btn btn-primary ml-4">
+          <a onClick={() => window.open(whatsappURL, "_blank")} className="btn btn-primary ml-4">
             Join Now
           </a>
         </nav>

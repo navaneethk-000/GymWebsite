@@ -1,6 +1,14 @@
 import React from 'react';
 
 const Services: React.FC = () => {
+
+  //Whatsapp redirection
+  const phoneNumber = "7907425360"; // replace with the owner's number
+  const message = "Hi! I'm interested in joining Stay Fit Gym. Please share the details.";
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  
   const services = [
     {
       title: 'Karate Training',
@@ -56,7 +64,7 @@ const Services: React.FC = () => {
                   {service.description}
                 </p>
                 <a 
-                  href="#join" 
+                  onClick={() => window.open(whatsappURL, "_blank")}
                   className="btn btn-primary py-2 px-4 opacity-0 transition-all duration-500 group-hover:opacity-100"
                 >
                   Join Now
